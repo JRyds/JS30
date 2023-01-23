@@ -1,0 +1,62 @@
+body {
+    background-image:url("stageView.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-size: 2vw;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.key {
+    font-family: Serif, sans-serif;
+    color: #c7d0d5;
+}
+
+.type {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+
+    font-family: Serif, sans-serif;
+    background-color: rgba(0, 0, 0, 0.62);
+    color: #c7d0d5;
+    padding: 15px;
+    border: solid #c7d0d5 5px;
+}
+
+.pressed {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+
+    font-family: Serif, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: #cca928;
+    padding: 15px;
+    border: solid #1c8fce 5px;
+}
