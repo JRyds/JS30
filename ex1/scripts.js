@@ -63,5 +63,6 @@ Object.keys(drumMap).forEach(key => {
     drum.addEventListener('click', function() {
         new Audio(drumMap[key]).play();
     });
+
 });
 
