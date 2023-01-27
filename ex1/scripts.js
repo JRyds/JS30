@@ -1,10 +1,46 @@
 
 //DO AN ACTION WHEN THE "A" KEY IS PRESSED
-const clickChange = document.querySelector(".clap");
 
-clickChange.addEventListener("keydown", function (event) {
-    if (event.code === "KeyA") {
-        console.log("A key pressed");
+
+//test to see if click works
+const test = document.querySelector(".clap");
+test.addEventListener("click", function (){
+    console.log("Clicked")
+})
+
+// test to see if pressing A key works and plays sound
+
+let drumMap = {
+    'KeyA': 'sounds/clap.wav',
+    'KeyS': 'sounds/hihat.wav',
+    'KeyD': 'sounds/kick.wav',
+    'KeyF': 'sounds/openHihat.wav',
+    'KeyG': 'sounds/boom.wav',
+    'KeyH': 'sounds/ride.wav',
+    'KeyJ': 'sounds/snare.wav',
+    'KeyK': 'sounds/tom.wav',
+    'KeyL': 'sounds/weird.wav'
+};
+
+document.addEventListener('keydown', function(e) {
+    if (e.code in drumMap) {
+        console.log(e.code)
+        let audio = new Audio(drumMap[e.code]);
+        audio.play();
+
     }
 });
 
+document.addEventListener('keydown', function(e) {
+    let key = e.key.toUpperCase();
+    let elements = document.querySelectorAll('.type');
+    for (let i = 0; i < elements.length; i++) {
+        let element = elements[i];
+        if (element.querySelector('.key').textContent === key) {
+            element.style.borderColor = 'red';
+            setTimeout(function() {
+                element.style.borderColor = '#c7d0d5';
+            }, 200);
+        }
+    }
+});
