@@ -48,7 +48,7 @@ document.addEventListener('keydown', function(e) {
 const drumMap = {
     'clap': 'sounds/clap.wav',
     'hihat': 'sounds/hihat.wav',
-    'kick': 'sounds/Kick.wav',
+    'kick': 'sounds/kick.wav',
     'openhat': 'sounds/openhat.wav',
     'boom': 'sounds/boom.wav',
     'ride': 'sounds/ride.wav',
