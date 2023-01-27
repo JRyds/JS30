@@ -1,8 +1,4 @@
 body {
-    background-image:url("images/stageView.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     margin: 0;
     padding: 0;
     border:0;
@@ -10,6 +6,10 @@ body {
 }
 
 .page {
+    background-image:url("images/stageView.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
